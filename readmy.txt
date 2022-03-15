@@ -1,0 +1,23 @@
+When requesting file from the https://lk.rosreestr.ru/, it was revealed that the use of addresses containing village councils is handled worse than without them.
+
+Written script:
+- reads the list of files in the directory where it is located
+- defines which files contain "xlsx"
+- Checks the 4th column for the presence of "c/c" each of files
+- When found, removes the contents from ,**"c/c"***,
+- Writes the result to files with the same file name by adding the prefix "_result.xlsx"
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+При запросе файлов выписок из Росреестра(https://lk.rosreestr.ru/) было выявлено что использование адресов содержаших сельсоветы обрабатывается хуже, чем без них. 
+
+Написаный скрипт: 
+	- читает список файлов в директории в которой находится 
+	- определяет какие файлы содержат "xlsx"
+	- Проверяет 4-й столбец на наличие "c/c" каждого из файлов 
+	- При нахождении удаляет содержимое от ,**"c/c"***,
+	- Записывает результат в файлы с тем же именем файла добавляя префикс "_result.xlsx"
+	
